@@ -1,0 +1,199 @@
+/* pages/gouwuche/index.wxss */
+.ad01 {
+  box-shadow: 0px 2px 2px gainsboro;
+  margin: 2px;
+}
+
+.ad01-img {
+  width: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 120px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gainsboro;
+}
+
+.menu-item {
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-img {
+  width: 100%;
+  align-self: center;
+  padding: 5px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.men-mc {
+  font-size: 14px;
+  align-self: center;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+}
+
+.new-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.new-text {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.new-arrow {
+  width: 13px;
+  height: 13px;
+}
+
+.search {
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+}
+
+.y01 {
+  width: 3px;
+  height: 18px;
+  background-color: green;
+  margin: 5px;
+  box-shadow: 2px 2px 2px gainsboro;
+}
+
+.t01 {
+  color: gray;
+  flex-grow: 1;
+  text-shadow: 1px 1px 1px gainsboro;
+}
+
+.m01 {
+  color: gray;
+  margin-right: 5px;
+  text-shadow: 2px 2px 2px gainsboro;
+}
+
+.lastest {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lastest-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px dotted gainsboro;
+}
+
+.lastest-img {
+  width: 100%;
+  border: 2px solid #fcfafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px gainsboro;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.lastest-name {
+  font-size: 12px;
+  padding: 3px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lastest-ccs01 {
+  font-size: 10px;
+  padding: 3px;
+  color: red;
+}
+
+.lastest-ccs02 {
+  font-size: 14px;
+  padding: 3px;
+  color: red;
+}
+
+.lastest-ccs03 {
+  font-size: 11px;
+  padding: 3px;
+  color: gray;
+}
+
+.paihang-item {
+  display: flex;
+  padding: 3px;
+  width: 100%;
+}
+
+.paihang-tupian {
+  width: 20%;
+}
+
+.paihang-img {
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2 px gainsboro;
+}
+
+.paing-info {
+  width: 80%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.paihang-name {
+  font-size: 13px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.paihang-jianjie {
+  font-size: 11px;
+  color: gray;
+  margin: 5px 0;
+}
+
+.cxuhao {
+  font-size: 13px;
+  color: green;
+}
+
+.cxiaoshou {
+  color: gray;
+  font-size: 11x;
+}
+
+.cjiage0 {
+  font-size: 10x;
+  color: red;
+}
+
+.cjiage1 {
+  font-size: 13x;
+  color: red;
+}

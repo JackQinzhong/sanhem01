@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fenlei/index",
+    "pages/gouwuche/index",
+    "pages/huiyuan/index",
+    "pages/about/index",
+    "pages/index/test",
+    "pages/index/test2",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序企业站:秦钟",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#07BC02",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/a-off.png",
+        "selectedIconPath": "images/a-on.png"
+      },
+      {
+        "pagePath": "pages/fenlei/index",
+        "text": "分类",
+        "iconPath": "images/b-off.png",
+        "selectedIconPath": "images/b-on.png"
+      },
+      {
+        "pagePath": "pages/gouwuche/index",
+        "text": "购物车",
+        "iconPath": "images/c-off.png",
+        "selectedIconPath": "images/c-on.png"
+      },
+      {
+        "pagePath": "pages/huiyuan/index",
+        "text": "会员",
+        "iconPath": "images/d-off.png",
+        "selectedIconPath": "images/d-on.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于我们",
+        "iconPath": "images/d-off.png",
+        "selectedIconPath": "images/d-on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

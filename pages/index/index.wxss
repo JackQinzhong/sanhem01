@@ -1,0 +1,65 @@
+page{
+  background-color:#f2f2f2; 
+
+
+}
+.longin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+}
+.shuoming{
+  display: block;
+  margin: 8px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.form-wap{
+  border-top: 1px solid #eee;
+
+}
+
+.flex-wap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-wrap{
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  margin: 0 -12px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 12px;
+
+}
+
+.label{
+  color: #999;
+  width: 4.5em;
+
+}
+
+.account-info-input{
+  font-size: 18px;
+  line-height: 100%;
+
+
+}
+.mysubmit{
+  width: 80%;
+  margin-bottom: 5px;
+
+
+}
+.wechat{
+
+  width: 80%;
+
+
+}

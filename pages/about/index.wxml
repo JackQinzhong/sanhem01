@@ -1,0 +1,10 @@
+
+<!--image组件默认宽度300px,高度225px 500x300 300x180-->
+
+<view>scaleToFill  图片拉伸至填满  aspectFit 成比例缩放，只保证图片的短边完全显示出来 </view>
+
+<view class="myred c1">
+  <image src="/images/a-off.png" mode="scaleToFill"> </image>
+  <image src="/images/b-off.png" mode="scaleToFill"> </image>
+
+</view>
