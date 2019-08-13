@@ -27,7 +27,7 @@ Page({
     })
 
     wx.request({
-      url: 'http://www.yaoyiwangluo.com/wx_fenlei.asp',
+      url: 'http://www.sanhem.com:8080/pic/fenlei.asp',
       success: function(res) {
         self.setData({
           navList: res.data

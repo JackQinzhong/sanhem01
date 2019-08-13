@@ -11,7 +11,7 @@
   </view>
   <view class='lastest'>
     <navigator url='' class='lastest-item'>
-      <image src='/pages/tupian/cp01.jpg' mode='widthFix' class='lastest-img'></image>
+      <image src='http://www.sanhem.com:8080/pic/2.jpg' mode='widthFix' class='lastest-img'></image>
       <text class='lastest-name'>产品名称01222222222222222222222222</text>
       <view>
         <text class='lastest-ccs01'>￥</text>
@@ -23,25 +23,12 @@
 
 
     <navigator url='' class='lastest-item'>
-      <image src='/pages/tupian/cp02.jpg' mode='widthFix' class='lastest-img'></image>
+      <image src='http://www.sanhem.com:8080/pic/3.jpg' mode='widthFix' class='lastest-img'></image>
       <text class='lastest-name'>产品名称02222222222222222222222222</text>
       <view>
         <text class='lastest-ccs01'>￥</text>
         <text class='lastest-ccs02'>168.00</text>
         <text class='lastest-ccs03'>656人付款</text>
-      </view>
-
-    </navigator>
-
-
-
-    <navigator url='' class='lastest-item'>
-      <image src='/pages/tupian/cp03.jpg' mode='widthFix' class='lastest-img'></image>
-      <text class='lastest-name'>产品名称03222222222222222222222222</text>
-      <view>
-        <text class='lastest-ccs01'>￥</text>
-        <text class='lastest-ccs02'>188.00</text>
-        <text class='lastest-ccs03'>456人付款</text>
       </view>
 
     </navigator>
