@@ -1,38 +1,29 @@
 <view class='fenlei'>
 
-  <view class='leftveiw' style='height:{{winHeight}}px'>
+  <view class='leftveiw' style='height:{{winHeight}}px;'>
     <block wx:for="{{navList}}" wx:key="*this">
       <text class='type-nav {{curNav == item.id ? "selected":""}}'
         bindtap='selectNav'
-        data-id='item.id'
-      >{{item.name}}</text>
+        data-id='{{item.id}}'>{{item.name}}</text>
     </block>
-
   </view>
-  <view class='lastest'>
-    <navigator url='' class='lastest-item'>
-      <image src='http://www.sanhem.com:8080/pic/2.jpg' mode='widthFix' class='lastest-img'></image>
-      <text class='lastest-name'>产品名称01222222222222222222222222</text>
-      <view>
-        <text class='lastest-ccs01'>￥</text>
-        <text class='lastest-ccs02'>188.00</text>
-        <text class='lastest-ccs03'>456人付款</text>
-      </view>
-
-    </navigator>
 
 
-    <navigator url='' class='lastest-item'>
-      <image src='http://www.sanhem.com:8080/pic/3.jpg' mode='widthFix' class='lastest-img'></image>
-      <text class='lastest-name'>产品名称02222222222222222222222222</text>
-      <view>
-        <text class='lastest-ccs01'>￥</text>
-        <text class='lastest-ccs02'>168.00</text>
-        <text class='lastest-ccs03'>656人付款</text>
-      </view>
 
-    </navigator>
+  <view class='zuixin'>
+    <block wx:for="{{zuixins}}" wx:key = "*this">
+      <navigator url='' class='zuixin-item'>
+        <image src='{{item.cp_tupian}}' mode='widthFix' class='zuixin-img'></image>
+        <text class='zuixin-mc'>{{item.cp_mingcheng}}</text>
 
+        <view>
+          <text class='lastest-ccs01'>￥</text>
+          <text class='lastest-ccs02'>{{item.jiage}}</text>
+          <text class='lastest-ccs03'>656人付款</text>
+        </view>
+      </navigator>
+    </block>
   </view>
+  
 
 </view>

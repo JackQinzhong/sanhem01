@@ -7,34 +7,58 @@ Page({
   data: {
     winWidth: 0,
     winHeight: 0,
-    navList: []
+    navList: [],
+    curNav : 0,
+    zuixins:[]
+  },
+
+  selectNav:function(event){
+    var that = this;
+    var id = event.target.dataset.id
+    console.log(id);
+    wx.request({
+      url: 'http://www.yaoyiwangluo.com/wx_fenlei_chanpin.asp',
+      data:{
+        int_lxid1:id
+      },
+      success:function(res)
+      {
+        that.setData({ zuixins: res.data}) 
+      }
+
+
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    var self = this;
+    var that = this;
     //获取系统信息
     wx.getSystemInfo({
       success: function(res) {
-        self.setData({
+        that.setData({
           winHeight: res.windowHeight,
           winWidth: res.windowWidth
         })
-
+        console.log('width',res.windowWidth)
       },
     })
 
     wx.request({
-      url: 'http://www.sanhem.com:8080/pic/fenlei.asp',
+      url: 'http://www.yaoyiwangluo.com/wx_fenlei.asp',
       success: function(res) {
-        self.setData({
-          navList: res.data
-        })
+        that.setData({ navList: res.data })
+      }
+    })
+  
 
-
-
+    wx.request({
+      url: 'http://www.sanhem.com:8080/pic/zuixins.asp',
+      success: function (res) {
+        that.setData({ zuixins: res.data })
+        console.log(res.data)
       }
     })
 
