@@ -1,29 +1,88 @@
-<form>
+<view class="ad01">
+  <image mode="widthFix" class="ad01-img" src="/pages/tupian/ad01.png"></image>
+</view>
+
+
+<view class="ad01" wx:if="{{jeguo2}}">
+  <image mode="widthFix" class="ad01-img" src="https://www.yaoyiwangluo.com/wx/ad02.png"></image>
+</view>
+
+<!--swiper跳转到其它链接-->
+<swiper indicatorDots="{{indicat}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="500" style='height:120px;'>
+
+  <block wx:for="{{images2}}" wx:key="item.id">
+    <navigator url='{{item.dizhi}}'>
+
+      <swiper-item>
+        <image src="{{item.tupian}}" class="slide-image" />
+
+      </swiper-item>
+    </navigator>
+
+  </block>
+
+</swiper>
+
+<!--快捷菜单-->
+<view class='menu'>
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu01.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>品牌大全</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu02.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>最新上架</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu03.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>用户中心</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu04.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>订单列表</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu05.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>留言反馈</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu06.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>活动列表</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu07.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>帮助中心</text>
+  </navigator>
+
+  <navigator url='' class='menu-item'>
+    <image src="/img/menu08.png" mode='widthFix' class="menu-img"></image>
+    <text class='men-mc'>关于我们</text>
+  </navigator>
+</view>
 
 
 
-  <view class='longin'>
-    <text class='shuoming'>请输入您的会员账号</text>
+
+<navigator url='' class='news'>
+  <image class='new-icon' src="/img/news.png"></image>
+  <text class='new-text'>2019 最新内容 关于小程序商城   内容过多用...代替 </text>
+  <image class='new-arrow' src='/img/right.png'></image>
+</navigator>
 
 
-    <view class='form-wap'>
-      <view class='flex-wap input-wrap'>
-        <text class='label'>账号</text>
-        <input value='' id='username' name="uname" class='account-info-input'></input>
-      </view>
+<block wx:for="{{vectnews}}" wx:key="*this">
+  <navigator url='{{item.myid}}' class='news'>
+    <image class='new-icon' src="/img/news.png"></image>
+    <text class='new-text'>{{item.myshijian}} {{item.mybiaoti}}</text>
+    <image class='new-arrow' src='/img/right.png'></image>
+  </navigator>
 
-      <view class='flex-wap input-wrap'>
-        <text class='label'>密码</text>
-        <input value='' id='mima' name="upwd" class='account-info-input'></input>
-      </view>
-    </view>
+</block>
 
 
-    <text class='shuoming'>请准确填写账号信息，有问题联系客服</text>
-    <button class='mysubmit' type='primary'>登陆</button>
-    <button class='mysubmit' type='primary'>注册新用户</button>
-    <button open-type='getUserInfo' bindgetuserinfo='' class='wechat'>微信登陆</button>
-
-
-  </view>
-</form>

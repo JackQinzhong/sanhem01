@@ -1,1 +1,29 @@
-我是会员
+<form>
+
+
+
+  <view class='longin'>
+    <text class='shuoming'>请输入您的会员账号</text>
+
+
+    <view class='form-wap'>
+      <view class='flex-wap input-wrap'>
+        <text class='label'>账号</text>
+        <input value='' id='username' name="uname" class='account-info-input'></input>
+      </view>
+
+      <view class='flex-wap input-wrap'>
+        <text class='label'>密码</text>
+        <input value='' id='mima' name="upwd" class='account-info-input'></input>
+      </view>
+    </view>
+
+
+    <text class='shuoming'>请准确填写账号信息，有问题联系客服</text>
+    <button class='mysubmit' type='primary'>登陆</button>
+    <button class='mysubmit' type='primary'>注册新用户</button>
+    <button open-type='getUserInfo' bindgetuserinfo='' class='wechat'>微信登陆</button>
+
+
+  </view>
+</form>
